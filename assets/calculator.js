@@ -282,9 +282,5 @@ $(document).ready(function()
     var len = result.length;
     result = result.substr(0,(len - 1)); 
     $("#answer").val(result);
-    r = $("#display").html();
-    res = $("#display").html().length;
-    $("#display").html(r.substr(0,res-1));
-    $("#display").append("<br>");
   });
 });

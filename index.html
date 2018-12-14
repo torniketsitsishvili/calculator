@@ -1,96 +1,93 @@
 <!Doctype HTML>
 <html lang="en-US">
   <head>
-  <meta charset = "UTF-8">
-  <link rel="stylesheet" type="text/css" href="assets/calculator.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-  <title>Web Calculator</title>
+    <meta charset = "UTF-8">
+    <link rel="stylesheet" type="text/css" href="assets/calculator.css">
+    <title>Web Calculator</title>
   </head> 
   <body>  
-  <div class="row">
-    <div class="col-lg-5 col-xs-10">
-    <sectio class="calci">
-      <form action="">
-      <div class="screen">
-        <input type="text" id ="answer" value="0">
+    <div class="row">
+      <div class="split left">
+        <section class="calci">
+          <form action="">
+            <div class="screen">
+              <input type="text" id ="answer" value="0">
+            </div>
+            <div id ="science">
+              <input type="button" value="sin" class="sc_operator"/>
+              <input type="button" value="cos" class="operator sc_operator"/>
+              <input type="button" value="tan" class="operator sc_operator"/>
+              <input type="button" value="asin" class="operator sc_operator"/>
+              <input type="button" value="acos" class="operator sc_operator"/>
+              <input type="button" value="atan" class="operator sc_operator"/><br>
+              <input type="button" value="ln" class="operator sc_operator"/>
+              <input type="button" value="log" class="operator sc_operator"/>
+              <input type="button" value="e(x)" class="operator sc_operator"/>
+              <input type="button" value="10^x" class="operator sc_operator"/>
+              <input type="button" value="2^x" class="operator sc_operator"/>
+              <input type="button" value="x²" class="operator sc_operator"/><br>
+              <input type="button" value="x³" class="operator sc_operator"/>
+              <input type="button" value="√x" class="operator sc_operator"/>
+              <input type="button" value="∛x" class="operator sc_operator"/>
+              <input type="button" value="1/x" class="operator sc_operator"/>
+              <input type="button" value="x!" class="operator sc_operator"/>   
+              <input type="button" value="nCr" class="operator sc_operator"/><br>
+              <input type="button" value="nPr" class="operator sc_operator"/>
+              <input type="button" value="floor" class="operator sc_operator"/>
+              <input type="button" value="ceil" class="operator sc_operator"/>
+              <input type="button" value="e"  class="operator sc_operator"/>
+              <input type="button" value="ln10" class="operator sc_operator"/>
+              <input type="button" value="√1/2" class="operator sc_operator"/><br>
+              <input type="button" value="√2" class="operator sc_operator"/>
+              <input type="button" value="ln2" class="operator sc_operator"/>
+              <input type="button" value="Pi" class="operator sc_operator"/>
+              <input type="button" value="to_oct" class="operator sc_operator"/>
+              <input type="button" value="to_hd" class="operator sc_operator"/>
+              <input type="button" value="to_bin" class="operator sc_operator"/><br>
+            </div>
+            <div>
+              <input type="button" value="7" class="standard number"/>
+              <input type="button" value="8" class="standard number"/>
+              <input type="button" value="9" class="standard number"/>
+              <input type="button" value="/" class="standard standard_op"/>
+              <input type="button" value="C" class="cl"/><br>
+              <input type="button" value="4" class="standard number"/>
+              <input type="button" value="5" class="standard number"/>
+              <input type="button" value="6" class="standard number"/>
+              <input type="button" value="*" class="standard standard_op"/>
+              <input type="button" value="%" class="standard standard_op"/><br>
+              <input type="button" value="1" class="standard number"/>
+              <input type="button" value="2" class="standard number"/>
+              <input type="button" value="3" class="standard number"/>
+              <input type="button" value="-" class="standard standard_op"/>
+              <input type="button" value="**" class="standard standard_op"/><br>
+              <input type="button" value="0" class="standard number"/>
+              <input type="button" value="." class="standard number"/>
+              <input type="button" value="+" class="standard standard_op"/>
+              <input type="button" value="=" class="equals"/>
+              <input type="button" value="&larr;" class=" clear"/>
+            </div>
+          </form>
+        </section>   
+      </div> 
+      <div class="split right">
+        <article class= "instruc">
+          <h4>Memory Pad</h4>
+          <div id = "instruct">
+          <div class="pad">
+            <class="text">
+          </div>   
+          </div>
+          <div id = "memory">
+            <div class="pad pad2">
+              <p id = "display">   
+              </p>
+            </div>
+          </div>
+        </article>   
       </div>
-      <div id ="science">
-        <input type="button" value="sin" class="sc_operator"/>
-        <input type="button" value="cos" class="operator sc_operator"/>
-        <input type="button" value="tan" class="operator sc_operator"/>
-        <input type="button" value="asin" class="operator sc_operator"/>
-        <input type="button" value="acos" class="operator sc_operator"/>
-        <input type="button" value="atan" class="operator sc_operator"/><br>
-        <input type="button" value="ln" class="operator sc_operator"/>
-        <input type="button" value="log" class="operator sc_operator"/>
-        <input type="button" value="e(x)" class="operator sc_operator"/>
-        <input type="button" value="10^x" class="operator sc_operator"/>
-        <input type="button" value="2^x" class="operator sc_operator"/>
-        <input type="button" value="x²" class="operator sc_operator"/><br>
-        <input type="button" value="x³" class="operator sc_operator"/>
-        <input type="button" value="√x" class="operator sc_operator"/>
-        <input type="button" value="∛x" class="operator sc_operator"/>
-        <input type="button" value="1/x" class="operator sc_operator"/>
-        <input type="button" value="x!" class="operator sc_operator"/>   
-        <input type="button" value="nCr" class="operator sc_operator"/><br>
-        <input type="button" value="nPr" class="operator sc_operator"/>
-        <input type="button" value="floor" class="operator sc_operator"/>
-        <input type="button" value="ceil" class="operator sc_operator"/>
-        <input type="button" value="e"  class="operator sc_operator"/>
-        <input type="button" value="ln10" class="operator sc_operator"/>
-        <input type="button" value="√1/2" class="operator sc_operator"/><br>
-        <input type="button" value="√2" class="operator sc_operator"/>
-        <input type="button" value="ln2" class="operator sc_operator"/>
-        <input type="button" value="Pi" class="operator sc_operator"/>
-        <input type="button" value="to_oct" class="operator sc_operator"/>
-        <input type="button" value="to_hd" class="operator sc_operator"/>
-        <input type="button" value="to_bin" class="operator sc_operator"/><br>
-      </div>
-      <div>
-        <input type="button" value="7" class="standard number"/>
-        <input type="button" value="8" class="standard number"/>
-        <input type="button" value="9" class="standard number"/>
-        <input type="button" value="/" class="standard standard_op"/>
-        <input type="button" value="C" class="cl"/><br>
-        <input type="button" value="4" class="standard number"/>
-        <input type="button" value="5" class="standard number"/>
-        <input type="button" value="6" class="standard number"/>
-        <input type="button" value="*" class="standard standard_op"/>
-        <input type="button" value="%" class="standard standard_op"/><br>
-        <input type="button" value="1" class="standard number"/>
-        <input type="button" value="2" class="standard number"/>
-        <input type="button" value="3" class="standard number"/>
-        <input type="button" value="-" class="standard standard_op"/>
-        <input type="button" value="**" class="standard standard_op"/><br>
-        <input type="button" value="0" class="standard number"/>
-        <input type="button" value="." class="standard number"/>
-        <input type="button" value="+" class="standard standard_op"/>
-        <input type="button" value="=" class="equals"/>
-        <input type="button" value="&larr;" class=" clear"/>
-      </div>
-      </form>
-    </section>   
-    </div> 
-    <div class="col-lg-6 col-xs-8">
-    <article class= "instruc">
-      <h4>Memory Pad</h4>
-      <div id = "instruct">
-      <div class="pad">
-        <class="text">
-      </div>   
-      </div>
-      <div id = "memory">
-      <div class="pad pad2">
-        <p id = "display">   
-        </p>
-      </div>
-      </div>
-    </article>   
     </div>
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script>
-  </script>
-  <script type ="text/javascript" src="assets/calculator.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type ="text/javascript" src="assets/calculator.js"></script>
   </body>
 </html>
