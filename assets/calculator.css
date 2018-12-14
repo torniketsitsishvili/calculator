@@ -106,16 +106,6 @@
     margin-bottom:5px;
     width:290px;
     background: #fffce2;
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#d9efff), color-stop(14%, #fffce2)) 0 4px;
-    background: -webkit-linear-gradient(top, #d9eaff 0%, #fffce2 14%) 0 4px;
-    background: -moz-linear-gradient(top, #d9eaff 0%, #fffce2 14%) 0 4px;
-    background: -ms-linear-gradient(top, #d9eaff 0%, #fffce2 14%) 0 4px;
-    background: -o-linear-gradient(top, #d9eaff 0%, #fffce2 14%) 0 4px;
-    background: linear-gradient(top, #d9eaff 0%, #fffce2 14%) 0 4px;
-    -webkit-background-size: 100% 20px;
-     -moz-background-size: 100% 20px;
-    -ms-background-size: 100% 20px;
-    -o-background-size: 100% 20px;
 }
 .pad:hover{
     border:1px solid #4682B4;
@@ -124,9 +114,6 @@
 .pad2{
     height:530px;
     }
-#memory{
-    display:none;
-}
 #display{
     margin-top:4px;
     line-height:20px;
